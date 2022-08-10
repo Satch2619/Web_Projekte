@@ -4,3 +4,16 @@
   color: white;
   background-color: black;
 }
+
+.preise {
+  font-weight: bolder;
+  color: red;
+}
+
+.footer {
+  background-color: darkgray;
+}
+
+.mobil {
+  color: blue;
+}
