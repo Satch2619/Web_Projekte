@@ -1,0 +1,16 @@
+body {
+  background-color: black;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  color: white;
+  font-size: 5rem;
+}
+
+.icon {
+  color: white;
+  font-size: x-large;
+}

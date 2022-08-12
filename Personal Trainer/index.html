@@ -6,13 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Trainer</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.cs"
-    />
+    <script
+      src="https://kit.fontawesome.com/0542d03b7b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>Personal Trainer Max Mustermann</h1>
+    <nav class="navbar">
+      <li><i class="fa-solid fa-house"></i></li>
+
+      <li>Kurse</li>
+      <li>Kontakt</li>
+    </nav>
+    <div class="handelIcon">
+      <i class="fa-solid fas fa-dumbbell icon"></i>
+    </div>
+    <h1>Personal Trainer <span class="h1Name">Max Mustermann</span></h1>
     <div id="vorstellung">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit impedit
       suscipit illum aliquam, doloribus voluptatem enim dolorem sapiente eveniet
@@ -22,12 +31,17 @@
     <grid></grid>
     <h3>Preise</h3>
     <ul class="preise">
-      <li>Angebot Starter 50€ pro Monat</li>
+      <li>Angebot Group Training 10€ pro Unit</li>
       <li>Angebot Focus 99€ pro Monat</li>
       <li>Angebot be Perfect 199€ pro Monat</li>
       <li>Angebot Only Me (Einzelunterricht) 99€ pro Unit</li>
     </ul>
     <footer>
+      <div class="kontaktInfo">
+        <p class="footer-zeile">Muster Straße 1a, 12345 Musterhausen</p>
+        <p class="footer-zeile">01234-5678910</p>
+        <p class="footer-zeile">info@maxmustemann.de</p>
+      </div>
       <div class="social-media-zeile">
         <a href="#" class="social-link">
           <i class="fa-brands fa-facebook"></i
@@ -38,12 +52,6 @@
         <a href="#" class="social-link">
           <i class="fa-brands fa-whatsapp icon"></i
         ></a>
-      </div>
-      <div class="mobil">
-        <br />
-        <p>Mobil</p>
-        <br />
-        <p>Email-Adresse</p>
       </div>
     </footer>
   </body>
