@@ -13,12 +13,22 @@ body {
   background-size: cover;
 }
 
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(36, 36, 36);
+  font-size: 1.3rem;
+}
+
 .h1Name {
   margin: 1px;
   color: red;
 }
 
 .preise {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 50px 50px;
   font-weight: bolder;
   color: red;
   opacity: 10;
