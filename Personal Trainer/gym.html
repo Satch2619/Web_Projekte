@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kontakt</title>
+    <title>Gym</title>
     <link rel="stylesheet" href="gym.css" />
     <script
       src="https://kit.fontawesome.com/0542d03b7b.js"
@@ -12,8 +12,70 @@
     ></script>
   </head>
   <body>
-    <div class="card">
-      <i class="fas far fa-address-card"></i>
+    <nav class="navbar">
+      <a href="index.html"><i class="fa-solid fa-house"></i></a>
+      <a href="über mich.html">über mich</a>
+    </nav>
+    <br />
+    <div class="slideshow-behaelter-behaelter">
+      <div class="slideshow-behaelter">
+        <div class="slideshow">
+          <div class="slide">
+            <img
+              src="bilder/dumbbells-g182b5f462_1280.jpg"
+              alt="Handel Bar"
+              class="slide-bild"
+            />
+            <div class="slide-textbereich">
+              <h3 class="slide-ueberschrift">Gewichte für jeden!</h3>
+              <p class="slide-beschreibung">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Numquam necessitatibus cum molestias distinctio ex.
+              </p>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="bilder/fitness-g5e13b00fa_1280.jpg"
+              alt="Studio"
+              class="slide-bild"
+            />
+            <div class="slide-textbereich">
+              <h3 class="slide-ueberschrift">Das kompleete Studio</h3>
+              <p class="slide-beschreibung">
+                Sed esse. Esse non autem corporis quis, explicabo dolor, at
+                expedita, pariatur molestias sunt omnis!
+              </p>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="bilder/gym-g798800b3a_1280.jpg"
+              alt="Express Area"
+              class="slide-bild"
+            />
+            <div class="slide-textbereich">
+              <h3 class="slide-ueberschrift">Für die ganz schnellen</h3>
+              <p class="slide-beschreibung">
+                Distinctio odio quas, exercitationem eius labore! Ullam tempora
+                nemo iste vero facilis amet molestias officia!
+              </p>
+            </div>
+          </div>
+          <a class="pfeil pfeil-links" onclick="umschalten(-1)"
+            ><span>&#10094;</span></a
+          >
+          <a class="pfeil pfeil-rechts" onclick="umschalten(1)"
+            ><span>&#10095;</span></a
+          >
+          <ol class="indikatorenliste">
+            <li class="indikator" onclick="springeZuEintrag(0)">&#8226;</li>
+            <li class="indikator" onclick="springeZuEintrag(1)">&#8226;</li>
+            <li class="indikator" onclick="springeZuEintrag(2)">&#8226;</li>
+          </ol>
+        </div>
+      </div>
     </div>
+    <script src="gym.js"></script>
   </body>
 </html>

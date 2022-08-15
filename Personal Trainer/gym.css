@@ -1,16 +1,203 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
   background-color: black;
 }
 
-.card {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  color: white;
-  font-size: 5rem;
+.navbar {
+  margin: 100px;
 }
 
-.icon {
+/* Äußerster Behälter, regelt die Größe der Slideshow */
+.slideshow-behaelter-behaelter {
+  width: 50%;
+}
+
+/* Innerer Behälter, sorgt mit dem Padding dafür, dass das Seitenverhältnis immer
+  beibehalten wird. 56.25% entspricht einem Seitenverhältnis von 16:9, da 9/16 = 0.5625 */
+.slideshow-behaelter {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+/* Die Slideshow wird nun in den Padding-Bereich des Behälters positioniert und füllt diesen aus */
+.slideshow {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.slide-bild {
+  width: 100%;
+}
+
+.slide-textbereich {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* Die top-Zuweisung wurde entfernt. Die Höhe des Textbereiches regelt nun das Padding,
+      damit immer der gesamte Text hineinpasst */
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  font-size: x-large;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 2% 15%;
+}
+
+.slide-ueberschrift {
+  font-size: 2rem;
+  /* Durch das Padding im Textbereich ist der Margin oben nun nicht mehr nötig */
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.slide-beschreibung {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.pfeil {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  color: rgba(255, 255, 255, 0.5);
+  user-select: none;
+  cursor: pointer;
+}
+
+.pfeil:hover {
+  color: white;
+}
+
+.pfeil-links {
+  left: 0;
+}
+
+.pfeil-rechts {
+  right: 0;
+}
+
+.indikatorenliste {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  list-style-type: none;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.indikator {
+  padding: 0 10px;
+  user-select: none;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 2s;
+}
+
+.aktiv {
+  opacity: 1;
+}
+
+/* Die Media Queries regeln stufenweise, wie sich die Slideshow auf kleineren Bildschirmen
+  verhält. Dabei werden die Breite der Slideshow sowie die Schriftgrößen angepasst. */
+
+@media screen and (max-width: 1400px) {
+  .slideshow-behaelter-behaelter {
+    width: 67.41%;
+  }
+
+  .slide-ueberschrift {
+    font-size: 1.77rem;
+  }
+
+  .slide-beschreibung {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .slideshow-behaelter-behaelter {
+    width: 74.1%;
+  }
+
+  .slide-ueberschrift {
+    font-size: 1.69rem;
+  }
+
+  .slide-beschreibung {
+    font-size: 1.18rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .slideshow-behaelter-behaelter {
+    width: 81.07%;
+  }
+
+  .slide-ueberschrift {
+    font-size: 1.6rem;
+  }
+
+  .slide-beschreibung {
+    font-size: 1.12rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slideshow-behaelter-behaelter {
+    width: 88.57%;
+  }
+
+  .slide-ueberschrift {
+    font-size: 1.5rem;
+  }
+
+  .slide-beschreibung {
+    font-size: 1.05rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .slideshow-behaelter-behaelter {
+    width: 95%;
+  }
+
+  .slide-ueberschrift {
+    font-size: 1.42rem;
+  }
+
+  /* In der kleinsten Größe wird die Beschreibung ausgeblendet, da sie nicht 
+      in das Textfeld passen oder das Bild beinahe komplett verdecken würde. */
+  .slide-beschreibung {
+    display: none;
+  }
 }
