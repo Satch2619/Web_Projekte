@@ -16,8 +16,10 @@ body {
 .navbar {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   background-color: rgb(36, 36, 36);
   font-size: 1.3rem;
+  box-sizing: border-box;
 }
 
 h1 {
