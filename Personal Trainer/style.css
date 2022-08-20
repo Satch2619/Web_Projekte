@@ -117,3 +117,8 @@ footer {
 .social-link {
   margin: 10px;
 }
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
