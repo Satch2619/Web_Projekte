@@ -5,18 +5,41 @@
 }
 
 body {
-  max-width: 100%;
-  background-position: 70px center;
-  background-repeat: no-repeat;
   background-color: black;
-  background-size: cover;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between, flex-start;
+  justify-content: space-between, flex-end;
   background-color: rgb(36, 36, 36);
   font-size: 1.3rem;
   margin: 10px;
   padding: 10px;
+}
+
+.h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.social-media-zeile {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+.social-link {
+  margin: 10px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.satchIcon {
+  display: flex;
+  justify-content: center;
 }
