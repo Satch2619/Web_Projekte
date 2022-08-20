@@ -10,7 +10,7 @@ body {
   background-position: 70px center;
   background-repeat: no-repeat;
   background-color: black;
-  background-size: cover;
+  background-size: contain;
 }
 
 .navbar {
@@ -89,7 +89,6 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
-  color: yellow;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -104,7 +103,6 @@ footer {
   justify-content: center;
   margin: 10px;
   padding: 5px 5px;
-  color: yellow;
 }
 
 .social-media-zeile {
@@ -112,13 +110,18 @@ footer {
   justify-content: center;
   padding: 5px;
   font-size: 3rem;
-  color: yellow;
 }
 .social-link {
   margin: 10px;
 }
 
 .copyright {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.satchIcon {
   display: flex;
   justify-content: center;
 }

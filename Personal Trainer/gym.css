@@ -15,7 +15,9 @@ body {
 }
 
 .navbar {
-  margin: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
 }
 
 /* Äußerster Behälter, regelt die Größe der Slideshow */
@@ -132,6 +134,27 @@ body {
 
 .aktiv {
   opacity: 1;
+}
+
+.social-media-zeile {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+.social-link {
+  margin: 10px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.satchIcon {
+  display: flex;
+  justify-content: center;
 }
 
 /* Die Media Queries regeln stufenweise, wie sich die Slideshow auf kleineren Bildschirmen
