@@ -18,20 +18,16 @@ body {
 }
 
 .h1 {
-  display: flex;
-  justify-content: center;
   text-align: center;
 }
 
-.profilbild {
-  width: 1280;
-  height: 720px;
-  box-sizing: content-box;
-  border-radius: 80px;
+.card {
+  width: 380;
+  height: 320px;
   box-shadow: 10px 10px 10px rgb(100, 100, 100);
   background-repeat: no-repeat;
-  background-image: url(./Bilder/Normal\ PB.png);
-  background-size: 1520px;
+  background-image: url(./Bilder/Miniatur.png);
+  background-size: 540px;
 }
 
 .social-media-zeile {
