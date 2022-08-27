@@ -1,0 +1,117 @@
+#body-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in-out;
+}
+
+.dialog {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 8px 8px 16px rgba(255, 255, 255, 0.3);
+  font-size: large;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in-out;
+}
+
+#body-overlay.sichtbar,
+.dialog.sichtbar {
+  opacity: 1;
+  pointer-events: auto;
+}
+#anmelden {
+  width: 25%;
+  background-color: rgb(255, 255, 255);
+}
+
+.dialog-schliessen-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 32px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+
+#anmelden {
+  background-color: #a39785;
+  box-shadow: inset 0px 0px 10px black, 2px 2px 4px rgba(255, 255, 255, 0.1),
+    8px 8px 16px rgba(255, 255, 255, 0.1);
+  border: 5px solid silver;
+}
+
+#anmelden .dialog-schliessen-button {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#anmelden form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#anmelden h3 {
+  margin: 5.5%;
+  text-align: center;
+  font-size: max(2.5vw, 1.2em);
+}
+
+#anmelden input {
+  width: 100%;
+  margin: 7px 0;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: inherit;
+  vertical-align: middle;
+}
+
+#anmelden .eingabefeld {
+  padding: 14px 16px;
+  font-size: 20px;
+  line-height: 10px;
+  background: #f5f6f7;
+  border: 2px solid rgb(0, 0, 0);
+  color: #777777;
+  height: 35px;
+  box-shadow: inset 0px 0px 4px #222;
+}
+
+#anmelden .eingabefeld:focus-visible {
+  outline: none;
+  border: 2px solid green;
+}
+
+#anmelden input[type="submit"] {
+  padding: 0 16px;
+  border: none;
+  font-size: 25px;
+  color: white;
+  line-height: 48px;
+  font-weight: bold;
+  cursor: pointer;
+  background-image: linear-gradient(#bbeaac, green);
+  text-decoration: none;
+  text-shadow: 1px 1px 5px black;
+  box-shadow: inset 0px 0px 10px black;
+  border-radius: 10%/50%;
+  width: 50%;
+  display: inline-block;
+}
+
+#anmelden input[type="submit"]:hover {
+  box-shadow: inset 0px 0px 10px black, 0px 0px 15px rgb(206, 12, 12);
+}

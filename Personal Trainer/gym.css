@@ -5,19 +5,29 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
   background-color: black;
+  background-image: url(./Bilder/backround-1204441.jpg);
+  background-size: cover;
 }
 
 .navbar {
   display: flex;
-  justify-content: center;
-  margin: 5px;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+}
+
+a:link {
+  text-decoration: none;
+  padding: 0px 20px 5px 2px;
+}
+
+a:hover,
+.fa-brands:hover,
+.fa-solid:hover {
+  color: red;
+  cursor: pointer;
 }
 
 /* Äußerster Behälter, regelt die Größe der Slideshow */
@@ -39,8 +49,8 @@ body {
   height: 100%;
   box-shadow: 0px 0px 10px gray;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 25vw;
 }
 
 .slide {
@@ -162,21 +172,7 @@ body {
 
 @media screen and (max-width: 1400px) {
   .slideshow-behaelter-behaelter {
-    width: 67.41%;
-  }
-
-  .slide-ueberschrift {
-    font-size: 1.77rem;
-  }
-
-  .slide-beschreibung {
-    font-size: 1.25rem;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .slideshow-behaelter-behaelter {
-    width: 74.1%;
+    width: 50.41%;
   }
 
   .slide-ueberschrift {
@@ -188,41 +184,55 @@ body {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .slideshow-behaelter-behaelter {
-    width: 81.07%;
+    width: 50.41%;
   }
 
   .slide-ueberschrift {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .slide-beschreibung {
-    font-size: 1.12rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .slideshow-behaelter-behaelter {
+    width: 50.41%;
+  }
+
+  .slide-ueberschrift {
+    font-size: 1.2rem;
+  }
+
+  .slide-beschreibung {
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .slideshow-behaelter-behaelter {
-    width: 88.57%;
+    width: 50.41%;
   }
 
   .slide-ueberschrift {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .slide-beschreibung {
-    font-size: 1.05rem;
+    font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 576px) {
   .slideshow-behaelter-behaelter {
-    width: 95%;
+    width: 50, 41%;
   }
 
   .slide-ueberschrift {
-    font-size: 1.42rem;
+    font-size: 0.42rem;
   }
 
   /* In der kleinsten Größe wird die Beschreibung ausgeblendet, da sie nicht 

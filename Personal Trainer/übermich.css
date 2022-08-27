@@ -6,35 +6,60 @@
 
 body {
   background-color: black;
+  background-image: url(./Bilder/backround-1204441.jpg);
+  background-size: cover;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between, flex-end;
-  background-color: rgb(36, 36, 36);
+  justify-content: flex-end;
+  align-items: center;
   font-size: 1.3rem;
-  margin: 10px;
-  padding: 10px;
+  box-sizing: border-box;
 }
 
-.h1 {
+a:link {
+  text-decoration: none;
+  padding: 0px 20px 5px 2px;
+}
+
+a:hover,
+.fa-brands:hover,
+.fa-solid:hover {
+  color: red;
+  cursor: pointer;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.überMich {
+  display: flex;
+  justify-content: center;
+  padding-left: 150px;
+  padding-right: 150px;
   text-align: center;
 }
 
 .card {
-  width: 380;
-  height: 320px;
-  box-shadow: 10px 10px 10px rgb(100, 100, 100);
+  display: grid;
+  grid-row: 2;
+  grid-column: 1fr 1fr 1fr;
+  width: 980px;
+  height: 500px;
   background-repeat: no-repeat;
-  background-image: url(./Bilder/Miniatur.png);
-  background-size: 540px;
+  background-image: url(./Bilder/Rundprofil.png);
+  background-size: 500px;
+  background-position: 100%;
 }
 
 .social-media-zeile {
   display: flex;
   justify-content: center;
   padding: 5px;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .social-link {
   margin: 10px;
@@ -49,4 +74,12 @@ body {
 .satchIcon {
   display: flex;
   justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
