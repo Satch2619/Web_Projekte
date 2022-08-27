@@ -144,7 +144,7 @@ h2 {
 }
 
 .button {
-  background-image: linear-gradient(#d3cdc5, #3a342c);
+  background-image: linear-gradient(#d3cdc5, green);
   color: white;
   text-decoration: none;
   text-shadow: 1px 1px 5px black;
@@ -155,10 +155,10 @@ h2 {
 }
 
 .einleitung-button {
-  margin: 5px;
-  font-size: max(1em, 1.65vw);
+  margin: -10px;
+  font-size: max(1.2em, 1.85vw);
   padding: 16px 30px;
-  border: 5px solid silver;
+  border: 5px solid rgb(255, 255, 255);
 }
 
 .hover-button:hover {
