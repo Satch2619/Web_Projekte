@@ -24,6 +24,9 @@ body {
 a:link {
   text-decoration: none;
   padding: 0px 20px 5px 2px;
+}
+
+.link {
   color: white;
 }
 
