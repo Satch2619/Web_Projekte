@@ -7,3 +7,8 @@ function dialogSchliessen(dialogId) {
   document.getElementById(dialogId).classList.remove("sichtbar");
   document.getElementById("body-overlay").classList.remove("sichtbar");
 }
+
+document.getElementById("anmelden").addEventListener("submit", hadleform);
+function handleform(event){
+  event.preventDefault();
+}
