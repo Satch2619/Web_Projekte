@@ -47,7 +47,7 @@
 }
 
 #anmelden {
-  background-color: #a39785;
+  background-color: #92a185;
   box-shadow: inset 0px 0px 10px black, 2px 2px 4px rgba(255, 255, 255, 0.1),
     8px 8px 16px rgba(255, 255, 255, 0.1);
   border: 5px solid silver;
@@ -79,7 +79,11 @@
   vertical-align: middle;
 }
 
-#anmelden .eingabefeld {
+#anmelden .firstname,
+.lastname,
+.trainingTarget,
+.phonenumber,
+.email {
   padding: 14px 16px;
   font-size: 20px;
   line-height: 10px;
@@ -90,12 +94,16 @@
   box-shadow: inset 0px 0px 4px #222;
 }
 
-#anmelden .eingabefeld:focus-visible {
+#anmelden .firstname:focus-visible,
+.lastname:focus-visible,
+.trainingTarget:focus-visible,
+.phonenumber:focus-visible,
+.email:focus-visible {
   outline: none;
   border: 2px solid green;
 }
 
-#anmelden input[type="submit"] {
+#anmelden input[type='submit'] {
   padding: 0 16px;
   border: none;
   font-size: 25px;
@@ -112,6 +120,6 @@
   display: inline-block;
 }
 
-#anmelden input[type="submit"]:hover {
+#anmelden input[type='submit']:hover {
   box-shadow: inset 0px 0px 10px black, 0px 0px 15px rgb(206, 12, 12);
 }
