@@ -15,5 +15,20 @@ function handleform(event){
   let anmelden = event.target;
   let formData = new FormData(anmelden);
 
-  formData.append()
+  formData.append("time",  Date.now());
+
+  for(let key of formData.keys()){
+    console.log(key, formData.get(key));
+
+  }
+
+  let url = "http://localhost3000/";
+
+  let request = new Request(url, {
+    body:formData,
+    method:"POST",
+  });
+    
+  fetch(request)
+  .then()
 }
