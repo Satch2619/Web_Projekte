@@ -31,4 +31,5 @@ function handleform(event){
     
   fetch(request)
   .then()
+  //*https://www.youtube.com/watch?v=uOE1aqyzq_w&t=836s Pause bei 18:29min*//
 }
