@@ -8,7 +8,12 @@ function dialogSchliessen(dialogId) {
   document.getElementById("body-overlay").classList.remove("sichtbar");
 }
 
-document.getElementById("anmelden").addEventListener("submit", hadleform);
+document.getElementById("anmelden").addEventListener("submit", handleform);
 function handleform(event){
   event.preventDefault();
+
+  let anmelden = event.target;
+  let formData = new FormData(anmelden);
+
+  formData.append()
 }
