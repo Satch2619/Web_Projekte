@@ -1,16 +1,20 @@
 const express = require("express");
 const cors = require("cors");
+const multer =require("multer");
 
 const app =  express();
 const port = 3000;
 
 const corsOptions = {
-  origin: "https://localhost:5500",
+  origin: "http://localhost:5500",
 };
 
-app.use(cors({origin:'*'}));
+app.use(cors(corsOptions));
 
-app.post("/", (request, response) => { 
+const upload = multer();
+
+app.post("/", upload.none(), (request, response) => { 
+  console.log(request.anmelden);
   response.json("Vielen Dank!");
 })
 

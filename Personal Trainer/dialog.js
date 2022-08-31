@@ -23,7 +23,7 @@ function handleform(event) {
 
   }
 
-  let url = "https://localhost3000/";
+  let url = "http://localhost3000/";
 
   let request = new Request(url, {
     body:formData,
