@@ -18,7 +18,7 @@ function handleform(event) {
 
   formData.append("time",  Date.now());
 
-  for(let key of formData.keys()){
+  for(let key of formData.keys())  {
     console.log(key, formData.get(key));
 
   }

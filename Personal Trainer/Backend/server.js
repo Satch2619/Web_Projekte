@@ -5,10 +5,10 @@ const app =  express();
 const port = 3000;
 
 const corsOptions = {
-  origin: "http://localhost:5500",
+  origin: "https://localhost:5500",
 };
 
-app.use(cors(corsOptions));
+app.use(cors({origin:'*'}));
 
 app.post("/", (request, response) => { 
   response.json("Vielen Dank!");
