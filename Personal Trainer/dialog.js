@@ -9,7 +9,8 @@ function dialogSchliessen(dialogId) {
 }
 
 document.getElementById("anmelden").addEventListener("submit", handleform);
-function handleform(event){
+
+function handleform(event) {
   event.preventDefault();
 
   let anmelden = event.target;
@@ -22,7 +23,7 @@ function handleform(event){
 
   }
 
-  let url = "http://localhost3000/";
+  let url = "https://localhost3000/";
 
   let request = new Request(url, {
     body:formData,
@@ -33,6 +34,7 @@ function handleform(event){
   .then((response) => response.json())
   .then((data) => {
     console-log("Antwort vom Server:", data);
+    anmelden.reset();
   })
   .catch((error) => {
     console.warn(error);
