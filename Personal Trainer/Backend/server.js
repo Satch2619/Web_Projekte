@@ -1,8 +1,8 @@
 const express = require("express");
 const cors = require("cors");
+const multer = require("multer");
 
-
-const app =  express();
+const app = express();
 const port = 3000;
 
 const corsOptions = {
@@ -11,9 +11,8 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.post("/", upload.none(), (request, response) => { 
-  console.log(request.body);
+app.post("/", (request, response) => {
   response.json("Vielen Dank!");
-})
+});
 
 app.listen(port, () => console.info("Server läuft!"));
