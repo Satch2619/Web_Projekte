@@ -9,12 +9,12 @@ const corsOptions = {
   origin: "http://localhost:5500",
 };
 
-app.use(cors(corsOptions));
+app.use(cors("*"));
 
 const upload = multer();
 
 app.post("/", upload.none(), (request, response) => { 
-  console.log(request.anmelden);
+  console.log(request.body);
   response.json("Vielen Dank!");
 })
 
