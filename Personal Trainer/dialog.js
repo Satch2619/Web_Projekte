@@ -26,8 +26,9 @@ function handleform(event) {
   let url = "http://localhost3000/";
 
   let request = new Request(url, {
-    body:formData,
+    body: formData,
     method:"POST",
+    headers: "Access-Control-Allow-Origin",
   });
     
   fetch(request)
