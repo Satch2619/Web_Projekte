@@ -29,6 +29,7 @@ function handleform(event) {
     body: formData,
     method:"POST",
     headers: "Access-Control-Allow-Origin",
+    
   });
     
   fetch(request)
