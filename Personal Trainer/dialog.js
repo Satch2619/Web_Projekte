@@ -28,8 +28,7 @@ function handleform(event) {
   let request = new Request(url, {
     body: formData,
     method:"POST",
-    headers: "Access-Control-Allow-Origin",
-    
+    headers: "Access-Control-Allow-Origin"
   });
     
   fetch(request)
